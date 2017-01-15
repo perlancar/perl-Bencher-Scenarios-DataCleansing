@@ -13,6 +13,8 @@ our $scenario = {
         # for the Data::Rmap method
         'Acme::Damn' => {},
         'Scalar::Util' => {},
+        # specify minimum version
+        'Data::Clean' => {version=>'0.48'},
     },
     participants => [
         {

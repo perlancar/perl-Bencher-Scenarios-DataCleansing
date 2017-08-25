@@ -9,7 +9,7 @@ use warnings;
 
 use DateTime;
 
-sub dt { DateTime->from_epoch(epoch => 1503646935) }
+sub _dt { DateTime->from_epoch(epoch => 1503646935) }
 
 our $scenario = {
     summary => 'Benchmark data cleansing (DateTime objects into scalar)',
@@ -52,35 +52,35 @@ our $scenario = {
             name => 'ary1-dt1',
             summary => 'A 1-element array containing 1 DateTime object',
             args => {
-                data => [dt()],
+                data => [_dt()],
             },
         },
         {
             name => 'ary10-dt10',
             summary => 'A 10-element array containing 10 DateTime objects',
             args => {
-                data => [map {dt()} 1..10],
+                data => [map {_dt()} 1..10],
             },
         },
         {
             name => 'ary100-dt100',
             summary => 'A 100-element array containing 100 DateTime objects',
             args => {
-                data => [map {dt()} 1..100],
+                data => [map {_dt()} 1..100],
             },
         },
         {
             name => 'ary1000-dt1000',
             summary => 'A 1000-element array containing 1000 DateTime objects',
             args => {
-                data => [map {dt()} 1..1000],
+                data => [map {_dt()} 1..1000],
             },
         },
         {
             name => 'ary1000-dt1',
             summary => 'A 1000-element array containing 1 DateTime objects',
             args => {
-                data => [(map {$_} 1..999), dt()],
+                data => [(map {$_} 1..999), _dt()],
             },
         },
     ],

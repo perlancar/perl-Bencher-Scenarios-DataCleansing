@@ -26,6 +26,7 @@ our $scenario = {
         {module=>'Data::Rmap'},
         {module=>'Data::Abridge'},
         {module=>'Data::Visitor::Callback'},
+        {module=>'Data::Tersify'},
     ],
 };
 

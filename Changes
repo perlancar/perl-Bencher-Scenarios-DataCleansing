@@ -1,3 +1,9 @@
+0.005   2019-09-11  Released-By: PERLANCAR; Urgency: medium
+
+	- Update new module name: Data::Clean::JSON ->
+	  Data::Clean::ForJSON.
+
+
 0.004   2017-08-25  Released-By: PERLANCAR
 
 	- Add participant: Data::Tersify.

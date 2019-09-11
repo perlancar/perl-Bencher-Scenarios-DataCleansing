@@ -11,12 +11,10 @@ our $scenario = {
     summary => 'Benchmark startup of various data cleansing modules',
     module_startup => 1,
     modules => {
-        # specify minimum version
-        'Data::Clean::JSON' => {version=>'0.38'},
     },
     participants => [
         {module=>'Data::Clean'},
-        {module=>'Data::Clean::JSON'},
+        {module=>'Data::Clean::ForJSON'},
 
         {module=>'JSON::MaybeXS'},
         {module=>'JSON::PP'},

@@ -2,3 +2,4 @@ Bencher-Scenarios-DataCleansing-*
 .build
 *~
 nytprof*
+.DS_Store
